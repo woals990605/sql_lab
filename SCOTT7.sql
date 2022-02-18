@@ -9,6 +9,7 @@ CREATE TABLE PostTbl
     CONSTRAINT "PostTbl_PK" PRIMARY KEY ("ID"),
     CONSTRAINT "PostTbl_FK" foreign key("USERID") references userTbl (id)
 );
+drop sequence SEQ_POSTTBL;
 
 CREATE SEQUENCE SEQ_POSTTBL INCREMENT BY 1 START WITH 1;
 
